@@ -83,9 +83,9 @@ The application will be available at http://127.0.0.1:5000.
    * Click on the "Delete" link next to a flight on the home page to remove the flight from the database.
 ## Screenshots
 
-![index](Images/index.png)
-![add](Images/add.png)
-![Update](Images/update.png)
+![index](Images/INDEX.png)
+![add](Images/ADD.png)
+![Update](Images/UPDATE.png)
 ![SQL Database](Images/SQLDATABASE.png)
 ## License
 
