@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Booking Database</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='background.jpg') }}');">
+    <h1>Flight Booking Database</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Flight Number</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for flight in flights %}
+            <tr>
+                <td>{{ flight.flight_number }}</td>
+                <td>{{ flight.source }}</td>
+                <td>{{ flight.destination }}</td>
+                <td>{{ flight.departure_time }}</td>
+                <td>{{ flight.arrival_time }}</td>
+                <td>{{ flight.price }}</td>
+                <td>
+                    <a href="{{ url_for('update_flight', id=flight.id) }}">Edit</a>
+                    <a href="{{ url_for('delete_flight', id=flight.id) }}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a class="add-button" href="{{ url_for('add_flight') }}">Add Flight</a>
+</body>
+</html>

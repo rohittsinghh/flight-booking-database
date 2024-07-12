@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Flight</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='background.jpg') }}');">
+    <h1>Add Flight</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <form class="form" method="POST">
+        <label for="flight_number">Flight Number:</label>
+        <input type="text" name="flight_number" required><br>
+        <label for="source">Source:</label>
+        <input type="text" name="source" required><br>
+        <label for="destination">Destination:</label>
+        <input type="text" name="destination" required><br>
+        <label for="departure_time">Departure Time:</label>
+        <input type="datetime-local" name="departure_time" required><br>
+        <label for="arrival_time">Arrival Time:</label>
+        <input type="datetime-local" name="arrival_time" required><br>
+        <label for="price">Price:</label>
+        <input type="text" name="price" required><br>
+        <button type="submit">Add Flight</button>
+    </form>
+</body>
+</html>
