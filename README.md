@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a web application for managing flight bookings using Flask and MySQL. The application allows users to perform CRUD (Create, Read, Update, Delete) operations on flight data through a user-friendly web interface.
+This mini project is a web application for managing flight bookings using Flask and MySQL. The application allows users to perform CRUD (Create, Read, Update, Delete) operations on flight data through a user-friendly web interface.
 
 ## Features
 
