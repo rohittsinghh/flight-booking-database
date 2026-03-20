@@ -31,7 +31,7 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/flight-booking-database.git
+   git clone https://github.com/rohittsinghh/flight-booking-database.git
    cd flight-booking-database
 2. **Set up the MySQL database:**
    * Create a new database named `flight_booking_db`.
